@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .highlighted {
+      background: yellow;
+    }
+    p {
+      border: 1px solid green;
+    }
+    body {
+      width: 400px;
+      margin: 0 auto;
+    }
+    #screenshot {
+      border: 1px solid black;
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+    }
+
+  </style>
+  <script src="./node_modules/html2canvas/dist/html2canvas.min.js"></script>
+</head>
+<body>
+  <h3 class="highlighted">Header of the main page</h3>
+  <p>Content of the main page</p>
+  <!-- The same origin -->
+  <iframe src="http://localhost:9080/iframes/frame.html" frameborder="0" width="300" height="200"></iframe>
+  <!-- CORS -->
+  <iframe src="http://127.0.0.1:9080/iframes/frame-cors.html" frameborder="0" width="300" height="200"></iframe>
+  <!-- Screenshot -->
+  <img src="//about:blank" id="screenshot" alt="No screenshot"/>
+  <script src="./scripts.js"></script>
+</body>
+</html>

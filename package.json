@@ -1,0 +1,19 @@
+{
+  "name": "screenshot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http": "0.0.0"
+  },
+  "devDependencies": {
+    "html2canvas": "^1.0.0-alpha.12",
+    "html2canvas-proxy": "^1.0.0"
+  }
+}
